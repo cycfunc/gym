@@ -23,6 +23,20 @@ register(
 )
 
 register(
+    id="InvertedCartPole-v0",
+    entry_point="gym.envs.classic_control.inverted_cartpole:InvertedCartPoleEnv",
+    max_episode_steps=200,
+    reward_threshold=195.0,
+)
+
+register(
+    id="InvertedCartPole-v1",
+    entry_point="gym.envs.classic_control.inverted_cartpole:InvertedCartPoleEnv",
+    max_episode_steps=500,
+    reward_threshold=475.0,
+)
+
+register(
     id="MountainCar-v0",
     entry_point="gym.envs.classic_control.mountain_car:MountainCarEnv",
     max_episode_steps=200,
